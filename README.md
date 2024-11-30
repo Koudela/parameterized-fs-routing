@@ -11,7 +11,7 @@ filesystem based routing engine
 
 ## Advantages
 
-* small (~1.9kb minified)
+* small (~1.8kb minified)
 * fast
 * dependency free
 * all features are documented and covered by tests
@@ -124,6 +124,15 @@ Like in express to the matching controller function a `next` function is passed
 as third parameter. By calling `next()` the next controller in the 
 controller-pipe is called.
 
+If a parameter is passed to the `next` function it is used for matching 
+subsequent controller names and functions. This serves two purposes: 
+1. The controller selecting string can change from `post` to `get` as
+soon as a login form is handled successfully. (No need to trigger a redirect
+after login.)
+2. It allows the controller selecting logic to be branched with ease. 
+`next('foo')` would call only `foo` and `index` files with `foo` or `controller`
+named functions in the controller-pipe.
+
 ## the controller function call
 
 One can use async or normal functions as controller functions.
@@ -177,5 +186,4 @@ at runtime. Mark that there is a drawback: Changes to the routes or controllers
 have no effect after initialization is done.
 
 If the process does not run in production mode every routing call is processed 
-via the current file system and nodes require and path cache is cleared. Thus, 
-any changes take effekt immediately. 
+via the current file system.
