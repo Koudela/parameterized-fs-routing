@@ -1,29 +1,29 @@
 {
-  "name": "parameterized-fs-routing",
-  "version": "1.0.0",
-  "description": "filesystem based routing engine",
-  "main": "index.js",
-  "scripts": {
-    "test": "npx ava"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koudela/parameterized-fs-routing.git"
-  },
-  "keywords": [
-    "routing",
-    "fs",
-    "filesystem",
-    "parameterized"
-  ],
-  "author": "thomas@koudela.net",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/koudela/parameterized-fs-routing/issues"
-  },
-  "homepage": "https://github.com/koudela/parameterized-fs-routing#readme",
-  "devDependencies": {
-    "ava": "^5.0.1",
-    "express": "^4.18.2"
-  }
+    "name": "parameterized-fs-routing",
+    "version": "1.0.0",
+    "description": "filesystem based routing engine",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx ava"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/koudela/parameterized-fs-routing.git"
+    },
+    "keywords": [
+        "routing",
+        "fs",
+        "filesystem",
+        "parameterized"
+    ],
+    "author": "thomas@koudela.net",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/koudela/parameterized-fs-routing/issues"
+    },
+    "homepage": "https://github.com/koudela/parameterized-fs-routing#readme",
+    "devDependencies": {
+        "ava": "^5.0.1",
+        "express": "^4.18.2"
+    }
 }
